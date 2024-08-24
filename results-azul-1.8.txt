@@ -1,0 +1,9 @@
+Benchmark                                   Mode  Cnt         Score   Error  Units
+UnicodeStringBenchmark.unicodeToString_1a  thrpt    2   5498996.151          ops/s
+UnicodeStringBenchmark.unicodeToString_1b  thrpt    2  33579918.196          ops/s
+UnicodeStringBenchmark.unicodeToString_1d  thrpt    2   9908429.277          ops/s
+UnicodeStringBenchmark.unicodeToString_1e  thrpt    2    996363.980          ops/s
+UnicodeStringBenchmark.unicodeToString_2a  thrpt    2   5487029.822          ops/s
+UnicodeStringBenchmark.unicodeToString_2b  thrpt    2   2477249.032          ops/s
+UnicodeStringBenchmark.unicodeToString_2d  thrpt    2   9803568.006          ops/s
+UnicodeStringBenchmark.unicodeToString_2e  thrpt    2   2970406.126          ops/s
