@@ -24,5 +24,7 @@ test {
 jmh {
     warmupIterations = 1
     iterations = 2
+    timeOnIteration = '3s'
     fork = 1
+    resultFormat = 'json'
 }

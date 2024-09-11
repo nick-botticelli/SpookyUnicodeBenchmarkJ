@@ -37,7 +37,161 @@ public final class UnicodeUtils
         return str;
     }
 
+    private static Pattern unicodeToStringPattern2 = Pattern.compile("(\\\\u(\\p{XDigit}{4}))");
     public static String unicodeToString_3(String str) {
+        Matcher matcher = unicodeToStringPattern2.matcher(str);
+
+        while (matcher.find()) {
+            String group = matcher.group(2);
+            char ch = (char) Integer.parseInt(group, 16);
+            String group1 = matcher.group(1);
+            str = str.replace(group1, ch + "");
+        }
+
+        return str;
+    }
+
+    static final Pattern unicodeToStringPattern3 = Pattern.compile("(\\\\u(\\p{XDigit}{4}))");
+    public static String unicodeToString_4(String str) {
+        Matcher matcher = unicodeToStringPattern3.matcher(str);
+
+        while (matcher.find()) {
+            String group = matcher.group(2);
+            char ch = (char) Integer.parseInt(group, 16);
+            String group1 = matcher.group(1);
+            str = str.replace(group1, ch + "");
+        }
+
+        return str;
+    }
+
+    static Pattern unicodeToStringPattern4 = Pattern.compile("(\\\\u(\\p{XDigit}{4}))");
+    public static String unicodeToString_5(String str) {
+        Matcher matcher = unicodeToStringPattern4.matcher(str);
+
+        while (matcher.find()) {
+            String group = matcher.group(2);
+            char ch = (char) Integer.parseInt(group, 16);
+            String group1 = matcher.group(1);
+            str = str.replace(group1, ch + "");
+        }
+
+        return str;
+    }
+
+    public static final Pattern unicodeToStringPattern5 = Pattern.compile("(\\\\u(\\p{XDigit}{4}))");
+    public static String unicodeToString_6(String str) {
+        Matcher matcher = unicodeToStringPattern5.matcher(str);
+
+        while (matcher.find()) {
+            String group = matcher.group(2);
+            char ch = (char) Integer.parseInt(group, 16);
+            String group1 = matcher.group(1);
+            str = str.replace(group1, ch + "");
+        }
+
+        return str;
+    }
+
+    public static Pattern unicodeToStringPattern6 = Pattern.compile("(\\\\u(\\p{XDigit}{4}))");
+    public static String unicodeToString_7(String str) {
+        Matcher matcher = unicodeToStringPattern6.matcher(str);
+
+        while (matcher.find()) {
+            String group = matcher.group(2);
+            char ch = (char) Integer.parseInt(group, 16);
+            String group1 = matcher.group(1);
+            str = str.replace(group1, ch + "");
+        }
+
+        return str;
+    }
+
+    private static final Pattern unicodeToStringPattern7 = Pattern.compile("(\\\\u(\\p{XDigit}{4}))");
+    static String unicodeToString_8(String str) {
+        Matcher matcher = unicodeToStringPattern7.matcher(str);
+
+        while (matcher.find()) {
+            String group = matcher.group(2);
+            char ch = (char) Integer.parseInt(group, 16);
+            String group1 = matcher.group(1);
+            str = str.replace(group1, ch + "");
+        }
+
+        return str;
+    }
+
+    private static Pattern unicodeToStringPattern8 = Pattern.compile("(\\\\u(\\p{XDigit}{4}))");
+    static String unicodeToString_9(String str) {
+        Matcher matcher = unicodeToStringPattern8.matcher(str);
+
+        while (matcher.find()) {
+            String group = matcher.group(2);
+            char ch = (char) Integer.parseInt(group, 16);
+            String group1 = matcher.group(1);
+            str = str.replace(group1, ch + "");
+        }
+
+        return str;
+    }
+
+    static final Pattern unicodeToStringPattern9 = Pattern.compile("(\\\\u(\\p{XDigit}{4}))");
+    static String unicodeToString_10(String str) {
+        Matcher matcher = unicodeToStringPattern9.matcher(str);
+
+        while (matcher.find()) {
+            String group = matcher.group(2);
+            char ch = (char) Integer.parseInt(group, 16);
+            String group1 = matcher.group(1);
+            str = str.replace(group1, ch + "");
+        }
+
+        return str;
+    }
+
+    static Pattern unicodeToStringPattern10 = Pattern.compile("(\\\\u(\\p{XDigit}{4}))");
+    static String unicodeToString_11(String str) {
+        Matcher matcher = unicodeToStringPattern10.matcher(str);
+
+        while (matcher.find()) {
+            String group = matcher.group(2);
+            char ch = (char) Integer.parseInt(group, 16);
+            String group1 = matcher.group(1);
+            str = str.replace(group1, ch + "");
+        }
+
+        return str;
+    }
+
+    public static final Pattern unicodeToStringPattern11 = Pattern.compile("(\\\\u(\\p{XDigit}{4}))");
+    static String unicodeToString_12(String str) {
+        Matcher matcher = unicodeToStringPattern11.matcher(str);
+
+        while (matcher.find()) {
+            String group = matcher.group(2);
+            char ch = (char) Integer.parseInt(group, 16);
+            String group1 = matcher.group(1);
+            str = str.replace(group1, ch + "");
+        }
+
+        return str;
+    }
+
+    public static Pattern unicodeToStringPattern12 = Pattern.compile("(\\\\u(\\p{XDigit}{4}))");
+    static String unicodeToString_13(String str) {
+        Matcher matcher = unicodeToStringPattern12.matcher(str);
+
+        while (matcher.find()) {
+            String group = matcher.group(2);
+            char ch = (char) Integer.parseInt(group, 16);
+            String group1 = matcher.group(1);
+            str = str.replace(group1, ch + "");
+        }
+
+        return str;
+    }
+
+    public static String unicodeToString_14(String str) {
         StringBuilder result = new StringBuilder();
         String[] parts = str.split("\\\\u");
 
@@ -49,7 +203,7 @@ public final class UnicodeUtils
         return result.toString();
     }
 
-    public static String unicodeToString_4(String str) {
+    public static String unicodeToString_15(String str) {
         StringBuilder result = new StringBuilder();
         int length = str.length();
 
